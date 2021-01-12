@@ -1,0 +1,94 @@
+body {
+  background-color: #EDECEA;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Federo';
+  font-size: 22px;
+  text-align: center;
+}
+
+a, a:visited {
+  color: #02B2EA;
+  text-decoration: none;
+ }
+
+a:hover, a:active {
+  color: #016484;
+  text-decoration: none;
+ }
+
+#cuadro {
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 670px;
+  background-color: #F1F1F1;
+  display: grid;
+  padding-top: 0px;
+  padding-bottom: -40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grad1 {
+  padding-top: 1px;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 670px;
+  height: 100px;
+  background-image: linear-gradient(#C8F6FE, #F1F1F1);
+  border-radius: 0px 0px 0px 0px;
+}
+
+.assignments-list {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.list {
+  padding-left: 20px;
+  text-align: left;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+#name1 {
+  margin-left: -40%;
+}
+
+h1 {
+  margin: 0 auto;
+  background-color: #016484;
+  color: #F7F7F7;
+  border-radius: 15px 15px 0px 0px;
+  max-width: 800px;
+  min-width: 670px;
+}
+
+h3 {
+  margin-top: -2px;
+}
+
+.photo1 {
+  grid-row: 1;
+  grid-column: 4/5;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: -70px;
+  margin-right: 60px;
+  box-shadow: 2px -3px 7px #888888;
+}
+
+#foot{
+  /*padding-top: -100px;*/
+  margin: 0 auto;
+  margin-top: -23px;
+  max-width: 800px;
+  min-width: 670px;
+  height: 100px;
+  background-image: linear-gradient(#F1F1F1, #C8F6FE);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.footext {
+  padding-top: 20px;
+  padding-bottom: -10px;
+}

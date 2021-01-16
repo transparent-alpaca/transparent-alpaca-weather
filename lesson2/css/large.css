@@ -21,7 +21,6 @@ body {
   #cuadro {
     margin: 0 auto;
     max-width: 1200px;
-    min-width: 670px;
     background-color: #F1F1F1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,6 +40,7 @@ body {
     margin-top: -50px;
     padding-left: 20px;
     padding-right: 10px;
+    border
   }
 
   #numero2 {
@@ -95,6 +95,6 @@ body {
 
  .desc {
       background-color: white;
-      min-width: 100%;
+      max-width: 100%;
       border-radius: 15px 15px 15px 15px;
   }

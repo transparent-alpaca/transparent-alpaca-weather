@@ -6,17 +6,17 @@
       }
 
     #numero1 {
-        max-width: 375px;
+        max-width: 100%;
     }
 
     #numero2 {
         margin-top: 10px;
-        max-width: 375px;
+        max-width: 100%;
     }
 
     #numero3 {
         margin-top: 10px;
-        max-width: 375px;
+        max-width: 100%;
     }
 
     body{

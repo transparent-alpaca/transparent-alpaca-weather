@@ -32,7 +32,6 @@ body {
     padding-top: 1px;
     margin: 0 auto;
     max-width: 1200px;
-    min-width: 670px;
     height: 100px;
     background-image: linear-gradient(#C8F6FE, #F1F1F1);
     border-radius: 0px 0px 0px 0px;
@@ -40,24 +39,18 @@ body {
   
   #numero1 {
     margin-top: -50px;
-    grid-row: 1/2;
-    grid-column: 1/2;
     padding-left: 20px;
     padding-right: 10px;
   }
 
   #numero2 {
     margin-top: -50px;
-    grid-row: 1/2;
-    grid-column: 2/3;
     padding-left: 10px;
     padding-right: 10px;
   }
 
   #numero3 {
     margin-top: -50px;
-    grid-row: 1/2;
-    grid-column: 3/4;
     padding-left: 10px;
     padding-right: 20px;
   }
@@ -76,7 +69,6 @@ body {
     color: #F7F7F7;
     border-radius: 15px 15px 0px 0px;
     max-width: 1200px;
-    min-width: 670px;
   }
   
   h3 {
@@ -84,11 +76,9 @@ body {
   }
   
   #foot{
-    /*padding-top: -100px;*/
     margin: 0 auto;
     margin-top: -23px;
     max-width: 1200px;
-    min-width: 670px;
     height: 100px;
     background-image: linear-gradient(#F1F1F1, #C8F6FE);
     border-radius: 0px 0px 15px 15px;
@@ -103,24 +93,8 @@ body {
       max-width: 99%;
   }
 
-  #image1 {
-    grid-row: 2;
-    grid-column: 1/2;
-  }
-
-  #image2 {
-    grid-row: 2;
-    grid-column: 2/3;
-  }
-
-  #image3 {
-    grid-row: 2;
-    grid-column: 3/4;
-  }
-
  .desc {
       background-color: white;
       min-width: 100%;
-      min-height: 50%;
       border-radius: 15px 15px 15px 15px;
   }

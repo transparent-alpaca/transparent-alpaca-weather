@@ -1,0 +1,108 @@
+body {
+    margin: 0 auto;
+    background-color: #EDECEA;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Federo';
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  a, a:visited {
+    color: #02B2EA;
+    text-decoration: none;
+   }
+  
+  a:hover, a:active {
+    color: #016484;
+    text-decoration: none;
+   }
+  
+  #cuadro {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 670px;
+    background-color: #F1F1F1;
+    display: grid;
+    /*padding-top: 0px;*/
+    /*padding-bottom: -40px;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+  }
+  
+  .grad1 {
+    padding-top: 1px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 670px;
+    height: 100px;
+    background-image: linear-gradient(#C8F6FE, #F1F1F1);
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  #numero1 {
+    margin-top: -50px;
+    grid-row: 1;
+    grid-column: 1/2;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  #numero2 {
+    margin-top: -50px;
+    grid-row: 1;
+    grid-column: 2/3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #numero3 {
+    margin-top: -50px;
+    grid-row: 1;
+    grid-column: 3/4;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  
+  #name1 {
+    margin-left: -40%;
+  }
+  
+  #titulo {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  h1 {
+    background-color: #016484;
+    color: #F7F7F7;
+    border-radius: 15px 15px 0px 0px;
+    max-width: 1200px;
+    min-width: 670px;
+  }
+  
+  h3 {
+    margin-top: -2px;
+  }
+  
+  #foot{
+    /*padding-top: -100px;*/
+    margin: 0 auto;
+    margin-top: -23px;
+    max-width: 1200px;
+    min-width: 670px;
+    height: 100px;
+    background-image: linear-gradient(#F1F1F1, #C8F6FE);
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .footext {
+    padding-top: 20px;
+    padding-bottom: -10px;
+  }
+
+  img {
+      max-width: 99%;
+  }

@@ -186,3 +186,8 @@ body {
   #scenarios {
     text-align: left;
   }
+
+  #coolors-scheme {
+    margin: 0 auto;
+    max-width: 75%;
+  }

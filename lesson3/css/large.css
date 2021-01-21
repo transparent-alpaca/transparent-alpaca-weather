@@ -133,51 +133,53 @@ body {
 
   #personas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: auto auto;
   }
 
   #personas-title {
-    grid-column: 1/4;
+    text-align: center;
+    /*grid-column: 1/4;*/
     grid-row: 1/2;
   }
 
   #chad-title {
-    grid-column: 1/4;
+    /*grid-column: 1/4;*/
     grid-row: 2/3;
   }
 
   #photo_persona1 {
-    grid-column: 1/2;
+    /*grid-column: 1/2;*/
     grid-row: 3;
     margin: 0 auto;
     min-width: 300px;
 }  
 
   #description_persona1 {
-    grid-column: 2/4;
+    /*grid-column: 2/4;*/
     grid-row: 3;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: 20px;
 }
 
   #betty-title {
-    grid-column: 1/4;
+    /*grid-column: 1/4;*/
     grid-row: 4/5;
   }
 
   #photo_persona2 {
-    grid-column: 1/2;
+    /*grid-column: 1/2;*/
     grid-row: 5/6;
     margin: 0 auto;
     min-width: 300px;
   }  
 
   #description_persona2 {
-    grid-column: 2/4;
+    /*grid-column: 2/4;*/
     grid-row: 5/6;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: 20px;
   }
 

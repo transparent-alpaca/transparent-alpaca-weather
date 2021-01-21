@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1300px) {
+
+    .li1, .li2, .li3, .li4 {
+        flex: 100%;
+    }
+
+    #cuadro {
+        padding-top: 100px;
+    }
+
+    body{
+        min-width: 700px;
+    }
+
+    #photo_persona1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #photo_persona2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

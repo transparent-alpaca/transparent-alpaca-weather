@@ -191,3 +191,43 @@ body {
     margin: 0 auto;
     max-width: 75%;
   }
+
+  .sunray {
+    color: #EDAE49;
+  }
+
+  .indigodye {
+    color: #003D5B;
+  }
+
+  .powderblue {
+    color: #AAD8D9;
+  }
+
+  .charcoal {
+    color: #2F4A57;
+  }
+
+  .metallicseaweed {
+    color: #00798C;
+  }
+
+  .aliceblue {
+    background-color: #E8EEF0;
+    color: black;
+  }
+
+  #monserratalternates-paragraph {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #E14848;
+  }
+
+  #amaranth-paragraph {
+    font-family: 'Amaranth', sans-serif;
+    color: #E14848;
+  }
+
+  #quattrocentosans-paragraph {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #E14848;
+  }

@@ -1,44 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <title>Delta Flying Pass</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Assignment portal for David Rios-Lazo in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Boarding Pass | WDD 230</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <script src="js/indexscript.js"></script>
-  </head>  
-  
-  <body>
+    <link rel='stylesheet' href='styles/large.css'>
+    <script src='scripts/page.js'></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo-mbp">
+                <img id="logo" src="images/deltalogo.jpg">
+                <p id="mbp-top">Mobile Boarding Pass</p>                
+            <div id="pass-name">
+              <p>Gabby Salamone</p>
+            </div>
+        </header>
 
-    <h1 id="pass">
-      
-    </h1>
-    
-    <header>
-      <div class="grad1">
+        <div class="city-info">
+            <div>
+                <p class="citytext">Departs 12:45 PM</p>
+                <h1 id="den">DEN</h1>
+                <p class="citytext">Denver</p>    
+            </div>
+
+            <img class="centerImg" src="images/plane.png">
+            
+            <div>
+                <p class="citytext">Arrives 5:30 PM</p>
+                <h1 id="bos">BOS</h1>
+                <p class="citytext">Boston</p>    
+            </div>
+        </div>
+
+        <div class="flight-info">
+            <div>
+                <h6>Date</h6>
+                <p>12/21/15</p>
+            </div>
         
-      </div>
-    </header>
-    
-    <div id="cuadro">
-        
+            <div>
+                <h6>Flight</h6>
+                <p>A2341</p>
+            </div>
+            <div>
+               <h6>Gate</h6>
+               <p>B12</p> 
+            </div>
+            <div>
+                <h6>Seat</h6>
+                <p>B10</p>
+            </div>
+            <div>
+                <h6>Boarding Zone</h6>
+                <p>1</p>
+            </div>
+            <div>
+                <h6>Boarding Time</h6>
+                <p>11:45 AM</p>
+            </div> 
+            
+            
+        </div>
 
-    </div>
-    
-    
-    <footer id="foot">
-      <p class="footext">
-    Thank you for flying Delta!
-      </p>  
-
-    </footer>
-    
-  </body>
-  
+        <footer>
+            <img class="barcode" src="images/barcode.png">
+            <p>Thank you for flying with Delta!</p>
+        </footer>
+    </main>
+</body>
 </html>

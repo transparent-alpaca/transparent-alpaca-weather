@@ -5,7 +5,7 @@ function getYear() {
 }
 
 function getLastModified() {
-    var lm = document.lastModified    
+    var lm = document.lastModified
     document.getElementById("lastupdated").innerHTML = lm;
 }
 

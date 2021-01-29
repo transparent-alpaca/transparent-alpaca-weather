@@ -1,0 +1,66 @@
+#bg {
+    min-height: 100%;
+    min-width: 1024px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    #bg {
+      left: 35%;
+      margin-left: -512px;
+    }
+  }
+
+#fourofour {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1550%;
+    color:rgb(250, 21, 21);
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#ohoh {    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1550%;
+    color:rgb(63, 0, 236);
+    position: absolute;
+    top: 1%;
+    left: 60%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (max-width: 1200px) {
+    #bg {
+      left: 35%;
+      margin-left: -512px;
+    }  
+
+    #ohoh {    
+        font-size: 650%;
+    }
+
+    #fourofour {    
+        font-size: 650%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #bg {
+      left: 35%;
+      margin-left: -512px;
+    }  
+
+    #ohoh {    
+        font-size: 350%;
+    }
+
+    #fourofour {    
+        font-size: 350%;
+    }
+
+}

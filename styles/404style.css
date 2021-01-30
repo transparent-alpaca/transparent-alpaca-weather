@@ -15,20 +15,20 @@
 
 #fourofour {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1550%;
+    font-size: 10em;
     color:rgb(250, 21, 21);
     position: absolute;
-    top: 1%;
+    top: 10px;
     left: 10%;
     text-shadow: 2px 2px 4px #000000;
 }
 
 #ohoh {    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1550%;
+    font-size: 10em;
     color:rgb(63, 0, 236);
     position: absolute;
-    top: 1%;
+    top: 10px;
     left: 60%;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -39,12 +39,14 @@
       margin-left: -512px;
     }  
 
-    #ohoh {    
-        font-size: 650%;
+    #ohoh {
+      top: 10px;
+      font-size: 5em;
     }
 
-    #fourofour {    
-        font-size: 650%;
+    #fourofour {  
+      top: 10px;  
+      font-size: 5em;
     }
 
 }
@@ -56,11 +58,11 @@
     }  
 
     #ohoh {    
-        font-size: 350%;
+        font-size: 5em;
     }
 
     #fourofour {    
-        font-size: 350%;
+        font-size: 5em;
     }
 
 }

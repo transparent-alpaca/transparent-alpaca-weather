@@ -5,6 +5,16 @@ header {
     max-width: 360px;
     margin: 0 auto;
     margin-bottom: -20px;
+    display: block;
+}
+
+#pancake {
+    margin: 0 auto;
+    background-color: #EDAE49;
+    font-size: 0.5em;
+    text-align: center;
+    min-height: 50px;
+    padding: 10px; 
 }
 
 header p {
@@ -169,16 +179,30 @@ nav {
     header {
         margin: 0 auto;
         max-width: 100%;
-        height: 150px;
+        min-height: 150px;
         margin-bottom: -16px;
+        display: block;
+    }
+
+    #pancake {
+        margin: 0 auto;
+        background-color: #EDAE49;
+        font-size: 0.4em;
+        text-align: center;
+        min-height: 25px;
     }
 
     header p {
         font-size: 3em;
     }
 
+    #logo-and-text {
+        max-width: 500px;
+    }
+
     #logo {
         max-height: 150px;
+        padding-right: -150px;
     }
 
     #logo-text {

@@ -39,10 +39,16 @@ let dName = dayname[d.getDay()];
 let dMonth = months[d.getMonth()];
 let fulldate = dName + ", " + d.getDate() + " " + dMonth + " " + d.getFullYear();
 document.getElementById("currentdate").innerHTML = fulldate;
+
+if (dName == 'Friday'){
+  document.getElementById('pancake').style.display = "block";
+} else {
+  document.getElementById('pancake').style.display = "none";
+}
+
 }
 
 function start() {
-    getYear();
-    /*getLastModified();*/
+    getYear();    
     getCurrentDay();
 }

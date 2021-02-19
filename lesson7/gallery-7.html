@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarmOrCold | Preston ID</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+<body onload="start(); displayWC();">
+    <header>
+        <div id="pancake">
+            <p id="pancake-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div id="logo-and-text">
+            <img id="logo" src="images/logo300.png" alt="logo">
+            <div id="logo-text">
+                <p id="logo-warm">Warm</p>
+                <p id="logo-or">Or</p>
+                <p id="logo-cold">Cold</p><br>
+                <p id="motto">let's find out!</p>
+            </div>
+        </div>        
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="../404.html">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="../404.html">Soda Springs</a></li>
+            <li><a href="../404.html">Fish Haven</a></li>
+            <li><a href="../404.html">Storm Center</a></li>
+            <li class="currentpage"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="contenido">
+            <h2 id="city-title">Weather Gallery</h2>
+            <div id="gallery">
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/1_sunny.jpg">
+                        <p class="weathertext">Sunny. Go and enjoy life.</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/2_partlysunny.jpg">
+                        <p class="weathertext">Partly sunny. Beautiful, isn't it?</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/3_cloudy.jpg">
+                     <p class="weathertext">Cloudy. Less glare, less heat, less sunburn.</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/4_windy.jpg">
+                        <p class="weathertext">Windy. Kites, anyone?</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/5_rain.jpg">
+                        <p class="weathertext">Rainy. Cuddle weather. Oh yes.</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/6_stormy.jpg">
+                        <p class="weathertext">Stormy. Should we call Noah?</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/7_snow.jpg">
+                        <p class="weathertext">Snowy. Hey, you're still coming to work, right?</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/8_foggy.jpg">
+                        <p class="weathertext">Foggy. Not sure if I'm in the correct lane. Or on the road at all.</p>
+                    </picture>
+                </div>
+                <div class="placeholder-loading">
+                    <picture>
+                        <img src="images/img-placeholder.jpg" alt="" class="loading" data-src="images/9_tornado.jpg">
+                        <p class="weathertext">Tornado. Just go and hide.</p>
+                    </picture>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | WarmOrCold | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({
+            google: {
+                families: ['Federo','Montserrat Alternates','Amaranth','Quattrocento Sans']
+            }
+        });
+      </script>
+    
+</body>
+</html>

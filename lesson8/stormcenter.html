@@ -41,15 +41,26 @@
 
         <div id="contenido">
             <h2 id="page-title">Storm Center Page</h2>
+            
+            <div id="hero-container">
+                <picture class="hero-ph"> 
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+            </div>
 
             <div id="formdiv">
+
+                <p>Please use the following form to report a storm or unusual weather event in your current area.</p>
+
                 <form id="form">
 
                     <label id="fullname-label" for="fullname">Full name:</label>
                     <input id="fullname-value" type="text" name="fullname" autocomplete="off" placeholder="Type your name here" pattern="[A-Za-z ]{5,}" required><br>
 
                     <label id="email-label" for="email">Email address:</label>
-                    <input id="email-value" type="email" name="email" autocomplete="off" placeholder="someone@company.com" required><br>
+                    <input id="email-value" type="email" name="email" autocomplete="off" placeholder="someone@company.com"><br>
 
                     <label id="phone-label" for="phone">Phone number:</label>
                     <input id="phone-value" type="tel" name="phone" autocomplete="off" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
@@ -58,10 +69,10 @@
                     <input id="zip-value" type="number" name="zip" autocomplete="off" placeholder="12345" pattern="[0-9]{5}" required>
 
                     <label id="date-label" for="stormdate">Storm date:</label>
-                    <input id="date-value" type="date" name="stormdate" autocomplete="off" required>
+                    <input id="date-value" type="date" name="stormdate" autocomplete="off" >
 
                     <label id="type-label" for="stormtype">Storm type:</label>
-                    <input id="type-value" list="storm_type" name="stormtype" placeholder="Click for suggestions" required>
+                    <input id="type-value" list="storm_type" name="stormtype" placeholder="Click for suggestions">
                     <datalist id="storm_type">
                         <option value="Flash Flood">
                         <option value="Hail">
@@ -76,8 +87,42 @@
                     <script>
                         function adjustRating(rating) {document.getElementById("ratingvalue").innerHTML = rating;}
                     </script>
-                    
 
+                    <label id="region-label" for="region">Storm region:</label>                    
+                    <select id="region-value" name="region">
+                        <option value="" disabled="" selected="">Select region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+
+                    <label id="danger-label">User in danger:</label>
+                    <label id="dangeryes">
+                        <input type="radio" name="danger" value="Yes"> Yes
+                    </label>
+                    <label id="dangermaybe">
+                        <input type="radio" name="danger" value="Maybe"> Maybe
+                    </label>
+                    <label id="dangerno">
+                        <input type="radio" name="danger" value="No"> No
+                    </label>
+
+                    <label id="comments-label">Comments:</label>
+                    <textarea id='comments-value' name="comments-value" rows='5'></textarea>
+                    
+                    <input id="resetear" type="reset" value="Clear form">
+          
+                    <input id="submitear" type="submit" value="Submit">
+                    <script>
+                        const feedbackElement = document.getElementById('formdiv');
+                        const formElement = document.forms[0];
+                        formElement.addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            feedbackElement.innerHTML = '<p id="gracias">Thank you for your message, '+ formElement.fullname.value +'. We will get back to you as soon as possible!</p>';
+                            feedbackElement.style.display = "block";
+                            document.body.classList.toggle('moveDown');
+                        });
+                    </script>
                 </form>
             </div>
 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarmOrCold | Gallery</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+<body onload="start(); displayWC();">
+    <header>
+        <div id="logo-and-text">
+            <img id="logo" src="images/logo300.png" alt="logo">
+            <div id="logo-text">
+                <p id="logo-warm">Warm</p>
+                <p id="logo-or">Or</p>
+                <p id="logo-cold">Cold</p><br>
+                <p id="motto">let's find out!</p>
+            </div>
+        </div>        
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="../404.html">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="../404.html">Soda Springs</a></li>
+            <li><a href="../404.html">Fish Haven</a></li>
+            <li class="currentpage"><a href="#">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="contenido">
+            <h2 id="page-title">Storm Center Page</h2>
+
+            <div id="formdiv">
+                <form id="form">
+
+                    <label id="fullname-label" for="fullname">Full name:</label>
+                    <input id="fullname-value" type="text" name="fullname" autocomplete="off" placeholder="Type your name here" pattern="[A-Za-z ]{5,}" required><br>
+
+                    <label id="email-label" for="email">Email address:</label>
+                    <input id="email-value" type="email" name="email" autocomplete="off" placeholder="someone@company.com" required><br>
+
+                    <label id="phone-label" for="phone">Phone number:</label>
+                    <input id="phone-value" type="tel" name="phone" autocomplete="off" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <label id="zip-label" for="zip">Zip code:</label>
+                    <input id="zip-value" type="number" name="zip" autocomplete="off" placeholder="12345" pattern="[0-9]{5}" required>
+
+                    <label id="date-label" for="stormdate">Storm date:</label>
+                    <input id="date-value" type="date" name="stormdate" autocomplete="off" required>
+
+                    <label id="type-label" for="stormtype">Storm type:</label>
+                    <input id="type-value" list="storm_type" name="stormtype" placeholder="Click for suggestions" required>
+                    <datalist id="storm_type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+
+                    <label id="severity-label" for="stormdate">Storm severity:</label>
+                    <input id="severityvalue" type="range" min="1" max="10" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">1</span>
+                    <script>
+                        function adjustRating(rating) {document.getElementById("ratingvalue").innerHTML = rating;}
+                    </script>
+                    
+
+                </form>
+            </div>
+
+        </div>            
+
+        
+        
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | WarmOrCold | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({
+            google: {
+                families: ['Federo','Montserrat Alternates','Amaranth','Quattrocento Sans']
+            }
+        });
+      </script>
+    
+</body>
+</html>

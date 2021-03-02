@@ -10,16 +10,26 @@ fetch(requestURL)
     for (let i = 0; i < prophets.length; i++) {
 
       let card = document.createElement('section');
+
       let h2 = document.createElement('h2');
-
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-
       card.appendChild(h2);
+
+      let birthdate = document.createElement('p');
+      birthdate.textContent = "Date of birth: " + prophets[i].birthdate;
+      card.appendChild(birthdate);
+
+      let birthplace = document.createElement('p');
+      birthplace.textContent = "Place of birth: " + prophets[i].birthplace;
+      card.appendChild(birthplace);
+
+      let image = document.createElement('img')
+      image.setAttribute('src', prophets[i].imageurl);
+      card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);
     }
 
   });
-
 
 const prophets = jsonObject['prophets'];

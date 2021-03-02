@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    background-image: url('../images/pexels-pok-rie-4339348.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100px;
+    padding-top: 50px;
+}
+
+div {
+    text-align: center;
+}
+
+table-1, caption, tr, th, td {
+    margin-top: 40px;
+    border: 1px solid #55565A;
+    padding: 9px;
+    text-align: center;
+}
+
+#table-1 {
+    margin: 0 auto;
+    margin-top: 40px;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #007481;
+    color: white;
+}
+ 
+table, caption {
+    box-shadow: 10px 10px 5px #384e58;
+}
+ 
+tbody tr:nth-child(odd) {
+    background-color: #9fc93d;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #dbfc9f;
+    color: black;
+}
+ 
+caption, tfoot td {
+    background-color: #007481;
+    color: white;
+}
+ 
+caption {
+    font-weight: 700;
+    font-size: 25px;
+}
+ 
+tfoot tr td {
+    font-size: 1.2em;
+}
+ 
+.row-color {
+    background-color: #e7ffed;
+}
+ 
+#cells {
+    background-color: #8DAEBF;
+    color: white;
+}
+
+#table-two {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+caption {    
+    background-color: #007481;
+    color: white;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #004d71;
+    color: white;
+    font-weight: 700;
+ }
+ 

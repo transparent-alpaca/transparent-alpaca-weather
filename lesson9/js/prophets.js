@@ -25,6 +25,7 @@ fetch(requestURL)
 
       let image = document.createElement('img')
       image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
       card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);

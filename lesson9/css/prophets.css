@@ -1,6 +1,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #E8E9EB;
 }
 
 h1, h2, p {
@@ -9,7 +10,7 @@ h1, h2, p {
 
 h1, h2 {
     font-family: 'Recursive', sans-serif;
-    color: rgb(81, 81, 152);
+    color: #313638;
 }
 
 p {
@@ -21,13 +22,13 @@ p {
     margin: 0 auto;
     max-width: 300px;
     padding: 10px;
-    background-color: rgb(221, 221, 221);
+    background-color: #2D3142;
     box-shadow: 0px 0px 15px 5px #8d8d8d;
 }
 
 section {
-    background-color: rgb(185, 185, 204);
-    border: 1px solid rgb(81, 81, 152);
+    background-color: #E0DFD5;
+    border: 2px groove #F06543;
     padding-bottom: 20px;
     margin-bottom: 10px;
 }

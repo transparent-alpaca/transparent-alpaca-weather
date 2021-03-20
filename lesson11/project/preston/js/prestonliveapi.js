@@ -31,16 +31,13 @@ window.addEventListener('load', () => {
         } else if (jsObject.list[i].dt_txt.includes((todplus2.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
           document.getElementById('todayplus2condition').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
           document.getElementById('todayplus2temp').textContent = jsObject.list[i].main.temp;
-        } 
-        else if (jsObject.list[i].dt_txt.includes((todplus3.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
+        } else if (jsObject.list[i].dt_txt.includes((todplus3.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
           document.getElementById('todayplus3condition').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
           document.getElementById('todayplus3temp').textContent = jsObject.list[i].main.temp;
-        } 
-        else if (jsObject.list[i].dt_txt.includes((todplus4.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
+        } else if (jsObject.list[i].dt_txt.includes((todplus4.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
           document.getElementById('todayplus4condition').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
           document.getElementById('todayplus4temp').textContent = jsObject.list[i].main.temp;
-        } 
-        else if (jsObject.list[i].dt_txt.includes((todplus5.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
+        } else if (jsObject.list[i].dt_txt.includes((todplus5.toLocaleString("en-CA").substring(0, 10)) + " 18:00:00")) {
           document.getElementById('todayplus5condition').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png');
           document.getElementById('todayplus5temp').textContent = jsObject.list[i].main.temp;
         } else {}
@@ -107,4 +104,33 @@ window.addEventListener('load', () => {
   document.getElementById('todayplus3').innerHTML = todayplus3;
   document.getElementById('todayplus4').innerHTML = todayplus4;
   document.getElementById('todayplus5').innerHTML = todayplus5;
+
+  /**************************************************************/
+
+  const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const towns = jsonObject['towns'];
+
+      let prestonevents = document.createElement('section');
+      prestonevents.classList.add('classprestonevents');
+
+      let prestonevent1 = document.createElement('p');
+      prestonevent1.textContent = towns[6].events[0];
+      let prestonevent2 = document.createElement('p');
+      prestonevent2.textContent = towns[6].events[1];
+      let prestonevent3 = document.createElement('p');
+      prestonevent3.textContent = towns[6].events[2];
+
+      prestonevents.appendChild(prestonevent1);
+      prestonevents.appendChild(prestonevent2);
+      prestonevents.appendChild(prestonevent3);
+      document.querySelector('div.prestonevents').appendChild(prestonevents);
+
+    });
+
 });

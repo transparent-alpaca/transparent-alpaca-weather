@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarmOrCold | Preston ID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/prestonliveapi.js"></script>
+    <!--link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet"-->
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body onload="start(); displayWC(); getCurrentDay();">
+    <header>
+        <div id="pancake">
+            <p id="pancake-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            </p>
+        </div>
+        <div id="logo-and-text">
+            <img id="logo" src="images/logo300.png" alt="logo">
+            <div id="logo-text">
+                <p id="logo-warm">Warm</p>
+                <p id="logo-or">Or</p>
+                <p id="logo-cold">Cold</p><br>
+                <p id="motto">let's find out!</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li class="currentpage"><a href="#">Preston</a></li>
+            <li><a href="../404.html">Soda Springs</a></li>
+            <li><a href="../404.html">Fish Haven</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="contenido">
+            <h2 id="city-title">Preston, Idaho</h2>
+            <div id="hero-container">
+                <picture class="hero-ph">
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+                <!--div class="hero-ph"><img src="images/napoleon-house.jpg" alt="preston-image"></div-->
+                <section class="weather-summary-overlay">
+                    <h3 class="hero-title">Weather Summary</h3>
+                    <img src="" class="frcstimg1" id="current-img"></p>
+                    <p>Currently: <strong><span id="current-condition"></span></strong></p>
+                    <p>Humidity: <strong><span id="current-humidity"></span></strong><strong>%</strong></p>
+                    <p>Temperature: <strong><span id="current-temp"></span>&#176; F</strong></p>
+                    <p>Wind Speed: <strong><span id="current-windspeed"></span> mph</strong></p>
+                    <p>Wind Chill: <strong><span id="output1"></span></strong></p>
+                </section>
+            </div>
+
+            <!--div id="content-box-1"><h3>Weather Summary</h3>
+                <img class="imagen" src="images/weather-summary-stock.jpg" alt="weather-summary">
+            </div-->
+            <!--div id="content-box-1"><h3>TLDR;</h3>
+                <p id="verdict">It's<br>COLD!<br>&#10052;</p>
+            </div-->
+
+            <div id="content-box-2">
+                <h3>5-Day Forecast</h3>
+                <!--img class="imagen-forecast" src="images/snowing.png" alt="weather-forecast"-->
+
+                <table id="forecast-table">
+                    <tr>
+                        <!--th>Day</th-->
+                        <th><span id="todayplus1"></span></th>
+                        <th><span id="todayplus2"></span></th>
+                        <th><span id="todayplus3"></span></th>
+                        <th><span id="todayplus4"></span></th>
+                        <th><span id="todayplus5"></span></th>
+                    </tr>
+
+                    <tr>
+                        <!--td><strong>Condition</strong></td-->
+                        <td><img src="" class="frcstimg" id="todayplus1condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus2condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus3condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus4condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus5condition"></td>
+                    </tr>
+
+                    <tr>
+                        <!--td><strong>Temperature</strong></td-->
+                        <td><span id="todayplus1temp"></span>&#176; F</td>
+                        <td><span id="todayplus2temp"></span>&#176; F</td>
+                        <td><span id="todayplus3temp"></span>&#176; F</td>
+                        <td><span id="todayplus4temp"></span>&#176; F</td>
+                        <td><span id="todayplus5temp"></span>&#176; F</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="content-box-3">
+                <h3>Missing cat found 3 years later</h3>
+                <div id="article-div">
+                    <img class="article-photo" src="images/cat.jpg" alt="article photo">
+                    <p id="articulo">A cat who went missing from his owner's Hawaii home turned up three years later in
+                        an Idaho neighborhood more than 3,000 miles away.<br><br>
+
+                        Huell Babineaux, of Preston, ID, said that he and his neighbors had been caring for a stray cat
+                        in their neighborhood for the past year, and recently he and his family decided to capture the
+                        feline and bring him to the Animal Medical Clinic in Preston. A veterinarian scanned the cat for
+                        a microchip, and he was identified as Boots, who went missing from Kai Kalawai's Manoa, Hawaii,
+                        home three years earlier.<br><br>
+
+                        Kai and his wife, Melia, said they have no idea how Boots ended up traveling from Hawaii to
+                        Idaho. Veterinarian Betsy Kettleman said Boots appeared to have been well-taken care of and is
+                        in good health.
+                    </p>
+                </div>
+            </div>
+            <div id="content-box-4">
+                <h3 id="content-box-4-title">Contact Information</h3>
+                <div id="content-box-4-paragraphs">
+                    <p id="contact-us"><strong>Please do NOT contact us at:</strong><br></p>
+                    <span style='font-size:20px;'>&#128222;</span>
+                    <p>(208) 496-1411</p>
+                    <span style='font-size:20px;'>&#127968;</span>
+                    <p>525 S Center St, Rexburg, ID 83460</p>
+                    <span style='font: size 20px;'>&#128231;</span><br>
+                    <a id="email" href="mailto:test@test.com">test@test.com</a>
+                </div>
+
+                <img id="content-box-4-image" src="images/map.png">
+            </div>
+
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | WarmOrCold | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p>
+        <p class="footext">Weather data provided by <a id="owm" href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Federo', 'Montserrat Alternates', 'Amaranth', 'Quattrocento Sans']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

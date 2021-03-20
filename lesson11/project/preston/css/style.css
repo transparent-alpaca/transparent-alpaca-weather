@@ -96,11 +96,12 @@ p, h3 {
 }
 
 .weather-summary-overlay {
+    font-size: 0.8em;
     border: 1px dashed;
-    background-color: #2F4A57;
+    background-color: #E8EEF0;
     padding-left: 15px;
     padding-right: 15px;
-    color: #EDAE49;
+    color: #003D5B;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -132,15 +133,21 @@ table, th, td {
     padding: 5px;
 }
 
+#forecast-table {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
 #forecast-table th {
     background-color: #003D5B;
     color: white;
 }
 
-#forecast-table td:nth-child(1) {
+/*#forecast-table td:nth-child(1) {
     background-color: #003D5B;
     color: white;
- }
+ }*/
 
 .article-photo {
     margin: 0 auto;
@@ -217,19 +224,24 @@ nav {
     text-decoration-style: double;
 }
 
-#map {
+/*#map {
     margin: 0 auto;
     margin-top: 15px;
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+}*/
 
 #content-box-4-image {
-    max-width: 95%;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 200px;
     margin: 0 auto;
     margin-top: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footext a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #edae49;
 }
 
 @media only screen and (min-width:34.5em){
@@ -327,16 +339,27 @@ nav {
         text-align: left;
     }
 
-    #content-box-1 {
+    /*#content-box-1 {
         grid-row: 3/4;
         grid-column: 1/2;
         width: 92%;
+    }*/
+
+    .frcstimg{
+            width: 100%;
     }
 
     #content-box-2 {
         grid-row: 3/4;
-        grid-column: 2/3;
-        width: 92%;
+        grid-column: 1/3;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    #forecast-table {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     #content-box-3 {
@@ -380,7 +403,6 @@ nav {
     #content-box-4-image {        
         grid-row: 2/3;
         grid-column: 2/3;
-        margin-right: 20px;
     }
 
     footer {

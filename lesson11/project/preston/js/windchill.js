@@ -1,7 +1,7 @@
 function calculateWC(){
       
-    var tempF = parseFloat(document.getElementById('tempF').innerHTML);
-    var speed = parseFloat(document.getElementById('speed').innerHTML);
+    var tempF = parseFloat(document.getElementById('current-temp').innerHTML);
+    var speed = parseFloat(document.getElementById('current-windspeed').innerHTML);
     var wc1 = windChill(tempF, speed);
 
     if (tempF <= 50 && speed >= 3){        

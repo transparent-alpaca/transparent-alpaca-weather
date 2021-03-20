@@ -1,0 +1,356 @@
+header {
+    background-color: #E8EEF0;
+    display: flex;
+    flex-direction: row;    
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    display: block;
+}
+
+header p {
+    display: inline;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#logo-and-text {
+    margin: 0 auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#logo {
+    max-height: 90px;
+    grid-template-columns: 1/2;
+}
+
+#logo-text {
+    margin-top: 24px;
+    min-width: 230px;
+    grid-template-columns: 2/3;
+}
+
+#motto {
+    font-size: 0.9em;
+    color: #003D5B;
+}
+
+#logo-warm {
+    color: #EDAE49;
+}
+
+#logo-or {
+    color: #003D5B;
+}
+
+#logo-cold {
+    color: #00798C;
+}
+
+main {
+    /*background-color: #f1f4f5;*/
+    text-align: center;    
+    margin: 0 auto;
+    max-width: 360px;    
+    min-width: 300px;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+
+p, h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#hero-container {
+    background-color: #f1f4f5;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border: 1px dashed;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.hero-ph img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#contenido {
+    margin-top: -37px;
+}
+
+h2 {    
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    color: #003D5B;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 360px;
+    min-width: 300px; 
+    font-family: 'Amaranth', sans-serif;    
+    background-color: #2F4A57;
+    color: #aad8d9;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 360px;    
+    min-width: 300px; 
+    background-color: #2F4A57;
+    font-family: 'Amaranth', sans-serif;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    color: #aad8d9;
+}
+
+#navigation a:hover {
+    color: #edae49;
+    background-color: #003d5b;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+.currentpage {
+    background-color:  #003d5b;
+    border: 3px solid #edae49;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+/********************************************************/
+
+.prestoncard {
+    background-color: #f1f4f5;
+    border: 1px dashed;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.classprestontext {
+    margin-top: -30px;
+    font-size: 0.9em;
+}
+
+.classprestonphoto img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.sodaspringscard {
+    background-color: #f1f4f5;
+    border: 1px dashed;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.classsodaspringstext {
+    margin-top: -30px;
+    font-size: 0.9em;
+}
+
+.classsodaspringsphoto img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.fishhavencard {
+    background-color: #f1f4f5;
+    border: 1px dashed;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.classfishhaventext {
+    margin-top: -30px;
+    font-size: 0.9em;
+}
+
+.classfishhavenphoto img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+/********************************************************/
+
+@media only screen and (min-width:34.5em){
+    nav {
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+
+    header {
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 150px;
+        margin-bottom: -16px;
+        display: block;
+    }
+
+    header p {
+        font-size: 3em;
+    }
+
+    #logo-and-text {
+        max-width: 500px;
+    }
+
+    #logo {
+        max-height: 150px;
+        padding-right: -150px;
+    }
+
+    #logo-text {
+        margin-top: 43px;
+    }
+
+    #motto {
+        font-size: 1.2em;
+    }
+
+    main {
+        width: 800px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    footer {
+        margin-top: 0;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    /****************************************************/
+
+    .prestoncard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .classprestontext {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .classprestonphoto {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .sodaspringscard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .classsodaspringstext {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .classsodaspringsphoto {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .fishhavencard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .classfishhaventext {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .classfishhavenphoto {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+}
+
+@media only screen and (min-width: 54.5em){
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+    /****************************************************/
+
+    #contenido {        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #page-title {
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    #hero-container {        
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .prestoncard {
+        grid-column: 1/2;
+        grid-row: 3;
+        display: block;
+    }
+
+    .sodaspringscard {
+        grid-column: 2/3;
+        grid-row: 3;
+        display: block;
+    }
+
+    .fishhavencard {
+        grid-column: 3/4;
+        grid-row: 3;
+        display: block;
+    }
+}

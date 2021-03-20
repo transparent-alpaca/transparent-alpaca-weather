@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarmOrCold | Soda Springs ID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/sodaspringsliveapi.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body onload="start(); displayWC(); getCurrentDay();">
+    <header>
+        <!--div id="pancake">
+            <p id="pancake-text">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            </p>
+        </div-->
+        <div id="logo-and-text">
+            <img id="logo" src="images/logo300.png" alt="logo">
+            <div id="logo-text">
+                <p id="logo-warm">Warm</p>
+                <p id="logo-or">Or</p>
+                <p id="logo-cold">Cold</p><br>
+                <p id="motto">let's find out!</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/index.html">Home</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/preston/preston.html">Preston</a></li>
+            <li class="currentpage"><a href="../404.html">Soda Springs</a></li>
+            <li><a href="../404.html">Fish Haven</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="contenido">
+            <h2 id="city-title">Soda Springs, Idaho</h2>
+            <div id="hero-container">
+                <picture class="hero-ph">
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+                <section class="weather-summary-overlay">
+                    <h3 class="hero-title">Weather Summary</h3>
+                    <img src="" class="frcstimg1" id="current-img"></p>
+                    <p>Currently: <strong><span id="current-condition"></span></strong></p>
+                    <p>Humidity: <strong><span id="current-humidity"></span></strong><strong>%</strong></p>
+                    <p>Temperature: <strong><span id="current-temp"></span>&#176; F</strong></p>
+                    <p>Wind Speed: <strong><span id="current-windspeed"></span> mph</strong></p>
+                    <p>Wind Chill: <strong><span id="output1"></span></strong></p>
+                </section>
+            </div>
+
+            <div id="content-box-1"><h3>Upcoming Events</h3>
+                <hr>
+                <div class="prestonevents"></div>
+            </div>
+
+            <div id="content-box-2">
+                <h3>5-Day Forecast</h3>
+                <!--img class="imagen-forecast" src="images/snowing.png" alt="weather-forecast"-->
+
+                <table id="forecast-table">
+                    <tr>
+                        <!--th>Day</th-->
+                        <th><span id="todayplus1"></span></th>
+                        <th><span id="todayplus2"></span></th>
+                        <th><span id="todayplus3"></span></th>
+                        <th><span id="todayplus4"></span></th>
+                        <th><span id="todayplus5"></span></th>
+                    </tr>
+
+                    <tr>
+                        <!--td><strong>Condition</strong></td-->
+                        <td><img src="" class="frcstimg" id="todayplus1condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus2condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus3condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus4condition"></td>
+                        <td><img src="" class="frcstimg" id="todayplus5condition"></td>
+                    </tr>
+
+                    <tr>
+                        <!--td><strong>Temperature</strong></td-->
+                        <td><span id="todayplus1temp"></span>&#176; F</td>
+                        <td><span id="todayplus2temp"></span>&#176; F</td>
+                        <td><span id="todayplus3temp"></span>&#176; F</td>
+                        <td><span id="todayplus4temp"></span>&#176; F</td>
+                        <td><span id="todayplus5temp"></span>&#176; F</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="content-box-3">
+                <h3>Fish and Game to provide two fishing events in the Magic Valley over spring break</h3>
+                <div id="article-div">
+                    <img class="article-photo" src="images/fishing.jpg" alt="article photo">
+                    <p id="articulo">With most, if not all, Magic Valley schools closed during the week of March 22 – 26
+                        for spring break families are encouraged to take advantage of early spring weather by going
+                        fishing at a local pond or lake. To make it easier to go fishing, Fish and Game staff from the
+                        Magic Valley Region will be hosting two fishing events for anglers of all ages in Hagerman and
+                        Burley during the week of spring break.<br><br>
+
+                        For those who don’t have access to fishing equipment, a limited number of fishing poles, bait,
+                        and some tackle will be provided, free of charge. Anglers who have their own fishing gear are
+                        encouraged to bring their own equipment.<br><br>
+
+                        If using department-owned equipment, a fishing license is not required. However, if anglers are
+                        14 years of age and older and choose to use their own equipment they are required to possess a
+                        valid 2021 fishing license. All general regulations and daily bag limits will be enforced.<br><br>
+
+                        <a href="https://idfg.idaho.gov/press/fish-and-game-provide-two-fishing-events-magic-valley-over-spring-break">Read more...</a>
+                    </p>
+                </div>
+            </div>
+            <div id="content-box-4">
+                <h3 id="content-box-4-title">Contact Information</h3>
+                <div id="content-box-4-paragraphs">
+                    <p id="contact-us"><strong>Please do NOT contact us at:</strong><br></p>
+                    <span style='font-size:20px;'>&#128222;</span>
+                    <p>(208) 496-1411</p>
+                    <span style='font-size:20px;'>&#127968;</span>
+                    <p>525 S Center St, Rexburg, ID 83460</p>
+                    <span style='font: size 20px;'>&#128231;</span><br>
+                    <a id="email" href="mailto:test@test.com">test@test.com</a>
+                </div>
+
+                <img id="content-box-4-image" src="images/map.png">
+            </div>
+
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | WarmOrCold | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p>
+        <p class="footext">Weather data provided by <a id="owm" href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Federo', 'Montserrat Alternates', 'Amaranth', 'Quattrocento Sans']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

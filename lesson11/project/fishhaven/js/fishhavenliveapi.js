@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-  const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=e77db52f2da17d60e264bb2bf0f2fe37&units=imperial';
+  const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=e77db52f2da17d60e264bb2bf0f2fe37&units=imperial';
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -116,20 +116,23 @@ window.addEventListener('load', () => {
     .then(function (jsonObject) {
       const towns = jsonObject['towns'];
 
-      let sodaspringsevents = document.createElement('section');
-      sodaspringsevents.classList.add('classsodaspringsevents');
+      let fishhavenevents = document.createElement('section');
+      fishhavenevents.classList.add('classfishhavenevents');
 
-      let sodaspringsevent1 = document.createElement('p');
-      sodaspringsevent1.textContent = towns[0].events[0];
-      let sodaspringsevent2 = document.createElement('p');
-      sodaspringsevent2.textContent = towns[0].events[1];
-      let sodaspringsevent3 = document.createElement('p');
-      sodaspringsevent3.textContent = towns[0].events[2];
+      let fishhavenevent1 = document.createElement('p');
+      fishhavenevent1.textContent = towns[2].events[0];
+      let fishhavenevent2 = document.createElement('p');
+      fishhavenevent2.textContent = towns[2].events[1];
+      let fishhavenevent3 = document.createElement('p');
+      fishhavenevent3.textContent = towns[2].events[2];
+      let fishhavenevent4 = document.createElement('p');
+      fishhavenevent4.textContent = towns[2].events[3];
 
-      sodaspringsevents.appendChild(sodaspringsevent1);
-      sodaspringsevents.appendChild(sodaspringsevent2);
-      sodaspringsevents.appendChild(sodaspringsevent3);
-      document.querySelector('div.sodaspringsevents').appendChild(sodaspringsevents);
+      fishhavenevents.appendChild(fishhavenevent1);
+      fishhavenevents.appendChild(fishhavenevent2);
+      fishhavenevents.appendChild(fishhavenevent3);
+      fishhavenevents.appendChild(fishhavenevent4);
+      document.querySelector('div.fishhavenevents').appendChild(fishhavenevents);
 
     });
 

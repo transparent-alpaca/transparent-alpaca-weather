@@ -512,12 +512,12 @@ main h1 {
   font-weight: 700;
 }
 
-main figure img {
+main figure {
+  margin: 0;
   width: 100%;
 }
 
-main figure {
-  margin: 0;
+main figure img {
   width: 100%;
 }
 

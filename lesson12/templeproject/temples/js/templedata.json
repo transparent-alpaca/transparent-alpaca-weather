@@ -1,0 +1,54 @@
+[
+    {
+		"id": 1,
+        "name":"Manhattan New York Temple",
+        "phone":"917-441-8220",
+        "address1":"125 Columbus Ave, Fourth Floor",
+        "city":"New York",
+        "state":"NY",
+        "zip":10023,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manhattan-new-york/1280x800/manhattan-temple-lds-246601-wallpaper.jpg",
+		"services":[
+            "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
+        ]
+	},
+	{
+		"id": 2,
+        "name":"Chicago Illinois Temple",
+        "phone":"847-299-6500",
+        "address1":"4151 W Lake Ave",
+        "city":"Glenview",
+        "state":"IL",
+        "zip":60025,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/chicago-illinois/1280x800/chicago-illinois-lds-temple-82591-wallpaper.jpg",
+		"services":[
+            "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
+        ]
+	},
+	{
+		"id": 3,
+        "name":"Las Vegas Nevada Temple",
+        "phone":"702-452-5011",
+        "address1":"827 Temple View Dr",
+        "city":"Las Vegas",
+        "state":"NV",
+        "zip":89110,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/las-vegas-nevada/1280x800/las-vegas-temple-lds-758798-wallpaper.jpg",
+		"services":[
+            "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
+        ]
+	},
+	{
+		"id": 4,
+        "name":"Los Angeles California Temple",
+        "phone":"310-474-5569",
+        "address1":"10777 Santa Monica Blvd",
+        "city":"Los Angeles",
+        "state":"CA",
+        "zip":90025,
+        "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/los-angeles-california/1280x800/los-angeles-california-temple-1079458-wallpaper.jpg",
+		"services":[
+            "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
+        ]
+	}
+]

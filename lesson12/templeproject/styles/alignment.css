@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #E9EEF2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    padding: 1em;
+  }
+  
+  #mostpopular {
+    color: white;
+    text-align: center;
+    background-color: #12AAEB;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: -50px;
+  }
+  
+  #personal {
+    text-align: center;
+    background-color: white;
+    color: #899B9F;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-bottom: -20px;
+  }
+  
+  #business {
+    text-align: center;
+    background-color: white;
+    color: #899B9F;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: -40px;
+  }
+  
+  #enterprise {
+    text-align: center;
+    background-color: white;
+    color: #899B9F;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-bottom: -20px;
+  }
+  
+  #personal-text {
+    color: #12AAEB;
+  }
+  
+  #business-text {
+    color: #12AAEB;
+  }
+  
+  #enterprise-text {
+    color: #12AAEB;
+  }
+  
+  .buttonz {
+    background-color: #d8d8d8;
+  }
+  
+  .signup {
+    background-color: #ffcf2d;
+  }
+  
+  .price {
+    color: #12AAEB;
+  }
+  
+  img {
+    padding-top: 50px;
+  }
+  
+  button {
+    color: white;
+    border-top: #DDE2E3;
+    border-left: #DDE2E3;
+    border-bottom: #A0AEB1;
+    border-right: #A0AEB1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }

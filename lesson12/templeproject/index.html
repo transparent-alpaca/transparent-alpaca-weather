@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites | Home Page</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <script src="js/towndata.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body onload="start(); displayWC();">
+    <header>
+        <img id="logo" src="images/logo300.png" alt="logo">
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li class="currentpage"><a href="#">Home</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/preston/preston.html">Temples</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/sodasprings/sodasprings.html">Reservations</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/fishhaven/fishhaven.html">Services</a></li>
+            <li><a href="https://transparent-alpaca.github.io/lesson11/project/stormcenter/stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="contenido">
+            <h2 id="page-title">Welcome!</h2>
+            
+            <div id="hero-container">
+                <picture class="hero-ph"> 
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+                <section class="summary-overlay">
+                    <h4>Fun Facts about the Salt Lake Temple:</h4>
+                    <p>
+                        - Announced: July 28th, 1847.<br>
+                        - Groundbreaking: February 14th, 1853.<br>
+                        - Dedicated: April 6th, 1893.<br>
+                        - Currently under an extensive renovation. It is expected to reopen in the year 2023.<br>
+                        - The Temple Square receives between 3 and 5 million visitors every year.<br>
+                        - The location of the temple determined the grid system of roads in Utah, still used to this day.
+                    </p>
+                </section>
+            </div>
+
+            <div id="content1">
+                <p>In our website, you will find information about our locations, services, amenities, and the Temples
+                    we provide accommodations for. We cater temple workers, patrons, families, members and friends who
+                    attend the Temple to serve, or to participate in events such as sealings, weddings, receptions, and
+                    youth trips. 
+                </p>
+            </div>
+            <div id="content2">                
+                <h3>Our Locations</h3>
+                <p>We provide services for the following Temple locations:</p>
+                <div id="locations">
+                    <div id="location1">
+                        <img src="images/manhattan.jpg" alt="temple image">
+                        <p>Manhattan, NY</p>
+                    </div>
+                    <div id="location2">
+                        <img src="images/chicago.jpg" alt="temple image">
+                        <p>Chicago, IL</p>
+                    </div>
+                    <div id="location3">
+                        <img src="images/lasvegas.jpg" alt="temple image">
+                        <p>Las Vegas, NV</p>
+                    </div>
+                    <div id="location4">
+                        <img src="images/losangeles.jpg" alt="temple image">
+                        <p>Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+            <div id="content3">
+                <h3>Make a reservation!</h3>
+                <p>We have limited accommodations, click <a href="#">here</a> to see our locations and make a reservation.</p>
+            </div>
+            <div id="content4">
+                <h3>Contact Us!</h3>
+                <p>We'll be glad to answer any questions! Click <a href="#">here</a> to contact us.</p>
+            </div>
+
+        </div>            
+
+        
+        
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | The Temple Inn & Suites | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({
+            google: {
+                families: ['Carrois Gothic SC','Oleo Script','Tenor Sans']
+            }
+        });
+      </script>
+    
+</body>
+</html>

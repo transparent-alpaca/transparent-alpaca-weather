@@ -1,0 +1,54 @@
+body {
+    margin: 0 auto;
+    display: grid;
+    max-width: 300px;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    text-align: center;
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.loading {
+    max-width: 300px;
+    max-height: 400px;
+    position: relative;
+}
+.placeholder-loading::before {
+    content:"";
+    display: block;
+    position: absolute;
+    left:-300px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+    animation: load 2.5s;
+    z-index: 50;
+}
+.placeholder-loading {
+    /*display: inline-block;*/
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+}
+@keyframes load {
+    0% {
+        left:-300px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/*@media only screen and (min-width:768px){
+
+}
+
+@media only screen and (min-width:1200px){
+
+}*/

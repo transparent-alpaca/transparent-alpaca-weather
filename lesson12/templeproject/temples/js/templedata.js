@@ -21,7 +21,9 @@ function buildTempleCard(temple) {
                           <img src="${temple.imageurl}" alt="${temple.name}">
                           <p>Address:<br><b>${temple.address1}<br>${temple.city}, ${temple.state} ${temple.zip}</b></p>
                           <p>Telephone:<br><b>${temple.phone}</b>
-                          <p>Services:<br><b>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</p>
+                          <p>Services:<br><b>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</b></p>
+                          <p>Closures:<br><b>${temple.closures}</b></p>
+                          <p>Schedule:<br><b>${temple.schedule}</b></p>
                           
                           <h3 class="hero-title">Weather</h3>
                           <img src="" class="frcstimg1" id="current-img${temple.id}"></p>

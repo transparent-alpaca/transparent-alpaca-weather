@@ -10,7 +10,11 @@
         "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manhattan-new-york/1280x800/manhattan-temple-lds-246601-wallpaper.jpg",
 		"services":[
             "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
-        ]
+        ],
+        "closures":[
+            "26 July 2021 - 9 August 2021"
+        ],
+        "schedule":"Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19"
 	},
 	{
 		"id": 2,
@@ -23,7 +27,11 @@
         "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/chicago-illinois/1280x800/chicago-illinois-lds-temple-82591-wallpaper.jpg",
 		"services":[
             "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
-        ]
+        ],
+        "closures":[
+            "3 April 2021 <br> 2 August 2021 - 9 August 2021 <br> 2 October 2021"
+        ],
+        "schedule":"Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19."
 	},
 	{
 		"id": 3,
@@ -36,7 +44,11 @@
         "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/las-vegas-nevada/1280x800/las-vegas-temple-lds-758798-wallpaper.jpg",
 		"services":[
             "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
-        ]
+        ],
+        "closures":[
+            "3 April 2021 <br> 5 July 2021 - 19 July 2021 <br> 2 October 2021 <br> 25 November 2021 - 26 November 2021 <br> 24 December 2021 - 25 December 2021"
+        ],
+        "schedule":"Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19"
 	},
 	{
 		"id": 4,
@@ -49,6 +61,10 @@
         "imageurl":"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/los-angeles-california/1280x800/los-angeles-california-temple-1079458-wallpaper.jpg",
 		"services":[
             "Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"
-        ]
+        ],
+        "closures":[
+            "3 April 2021 <br> 5 July 2021 - 19 July 2021 <br> 23 November 2021 - 25 November 2021 <br> 24 December 2021 - 25 December 2021 <br> 31 December 2021"
+        ],
+        "schedule":"Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19"
 	}
 ]

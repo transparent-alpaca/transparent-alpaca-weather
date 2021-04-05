@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites | Receptions</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <script src="js/towndata.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body onload="start(); displayWC();">
+    <header>
+        <img id="logo" src="images/logo300.png" alt="logo">
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li class="currentpage"><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="contenido">
+            <h1 id="page-title">Wedding Receptions</h1>
+
+            <div id="hero-container">
+                <picture class="hero-ph">
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+            </div>
+
+            <div id="reception-info">
+                <h2>What we offer:</h2>
+                <p>Our basic packages start at $60 per guest.<br><br>
+                    Packages include:<br>
+                    - Rental of reception room for 5 hours<br>
+                    - General room decoration<br>
+                    - Guests tables and chairs (decorated)<br>
+                    - Professional DJ for the duration of the event<br>
+                    - Cake of your choice provided by our cake designer<br>
+                    - Photographer for 3 hours<br>
+                    - Meal service (several meal options provided)<br>
+                    - Set-up and clean-up<br><br>
+                    We also offer customizable packages, depending on the client needs.
+
+                </p>
+            </div>
+            <h3>Contact Us!</h3>
+            <p>We'll be glad to answer any questions! Click <a href="#">here</a> to contact us.</p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | The Temple Inn & Suites | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Carrois Gothic SC', 'Oleo Script', 'Tenor Sans']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

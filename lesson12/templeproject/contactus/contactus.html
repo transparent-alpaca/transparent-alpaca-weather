@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites | Home Page</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <script src="js/towndata.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body onload="start(); displayWC();">
+    <header>
+        <img id="logo" src="images/logo300.png" alt="logo">
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="currentpage"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="contenido">
+            <h1 id="page-title">Contact Us!</h1>
+            
+            <div id="hero-container">
+                <picture class="hero-ph"> 
+                    <source srcset="images/hero600.jpg" media="(min-width:552px) and (max-width: 799px)">
+                    <source srcset="images/hero800.jpg" media="(min-width:800px)">
+                    <img src="images/hero300.jpg" alt="preston-image">
+                </picture>
+            </div>
+
+            <div id="content-box-4">
+                <h3 id="content-box-4-title">Contact Information</h3>
+                <div id="content-box-4-paragraphs">
+                    <p id="contact-us"><strong>Contact us at:</strong><br><br></p>
+                    <span style='font-size:20px;'>&#128222;</span>
+                    <p>301-760-3345</p>
+                    <span style='font-size:20px;'>&#127968;</span>
+                    <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+                </div>
+
+                <iframe id="content-box-4-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.9888834956935!2d-77.09509375142771!3d38.98277933027665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1617663395823!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                
+                
+            </div>
+
+            
+
+        </div>      
+        
+        <div id="formform">
+            <h3 id="form-contactus">Send us a message!</h3>
+
+            <form id="suite-form">
+                <label id="fullname-label" for="fullname">Full name:</label>
+                <input id="fullname-value" type="text" name="fullname" autocomplete="off" placeholder="Type your name here" pattern="[A-Za-z ]{5,}" required><br>
+
+                <label id="email-label" for="email">Email address:</label>
+                <input id="email-value" type="email" name="email" autocomplete="off" placeholder="someone@company.com"><br>
+
+                <label id="comments-label">Comments:</label>
+                <textarea id='comments-value' name="comments-value" rows='3'></textarea>
+
+                <input id="submitear" type="submit" value="Submit">
+                    <script>
+                        const feedbackElement = document.getElementById('formform');
+                        const formElement = document.forms[0];
+                        formElement.addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            feedbackElement.innerHTML = '<p id="gracias"><br><br>Thank you for your message, '+ formElement.fullname.value +'. We will get back to you as soon as possible!</p>';
+                            feedbackElement.style.display = "block";
+                            document.body.classList.toggle('moveDown');
+                        });
+                    </script>
+
+            </form>
+            
+        </div>
+
+        
+        
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | The Temple Inn & Suites | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+        WebFont.load({
+            google: {
+                families: ['Carrois Gothic SC','Oleo Script','Tenor Sans']
+            }
+        });
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites | Missionaries</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
+    <script src="js/indexscript.js"></script>
+    <script src="js/lazy-load-js.js"></script>
+    <script src="js/towndata.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body onload="start(); displayWC();">
+    <header>
+        <img id="logo" src="images/logo300.png" alt="logo">
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li class="currentpage"><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1 id="page-title">Suites for Full-Time Temple Missionaries</h1>
+
+        <div id="suite-contenido">
+            <img id="photo1" src="images/suite1.jpg" alt="photo1">
+            <p id="text1">
+                This room features a large living room, king size bed, large kitchen area, and a large bathroom and closet.
+                It also includes:<br><br>
+                - Free local phone calls<br>
+                - Laptop safe<br>
+                - Free toiletries<br>
+                - Spa Tub<br>
+                - Bathrobes<br>
+                - Guest bathroom<br>
+            </p>
+            <img id="photo2" src="images/suite2.jpg" alt="photo2">
+            <p id="text2">
+                Full-Time Temple Missionaries get a special discount by week, or by month. Please fill the form below to request
+                more information about our suites, discounts, or availability.
+            </p>
+
+        </div>
+
+        <div id="formform">
+            <h3 id="form-contactus">Contact Us!</h3>
+
+            <form id="suite-form">
+                <label id="fullname-label" for="fullname">Full name:</label>
+                <input id="fullname-value" type="text" name="fullname" autocomplete="off" placeholder="Type your name here" pattern="[A-Za-z ]{5,}" required><br>
+
+                <label id="email-label" for="email">Email address:</label>
+                <input id="email-value" type="email" name="email" autocomplete="off" placeholder="someone@company.com"><br>
+
+                <label id="comments-label">Comments:</label>
+                <textarea id='comments-value' name="comments-value" rows='3'></textarea>
+
+                <input id="submitear" type="submit" value="Submit">
+                    <script>
+                        const feedbackElement = document.getElementById('formform');
+                        const formElement = document.forms[0];
+                        formElement.addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            feedbackElement.innerHTML = '<p id="gracias"><br><br>Thank you for your message, '+ formElement.fullname.value +'. We will get back to you as soon as possible!</p>';
+                            feedbackElement.style.display = "block";
+                            document.body.classList.toggle('moveDown');
+                        });
+                    </script>
+
+            </form>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footext"> &copy;<span id="year"></span> | The Temple Inn & Suites | David N. Rios-Lazo<br>
+            <small><span id="currentdate"></span></small><br>
+            <!--small>Last Updated: <span id="lastupdated"></span></small-->
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Carrois Gothic SC', 'Oleo Script', 'Tenor Sans']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

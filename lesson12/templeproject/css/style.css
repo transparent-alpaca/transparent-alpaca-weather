@@ -374,6 +374,8 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 5px;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     #location1 {
